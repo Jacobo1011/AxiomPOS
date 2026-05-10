@@ -3,11 +3,36 @@ node_modules/
 .next/
 out/
 
+# Env files
+.env
+.env.*
+frontend/.env*
+
 # Python
 __pycache__/
 *.py[cod]
+*.pyc
+*.pyo
+*.pyd
 venv/
-.env
+env/
+ENV/
+.pytest_cache/
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
 
 # OS
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
