@@ -6,19 +6,18 @@ export async function createSale(items: {
 }[]) {
   const res = await fetch(API_URL + "/", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      items: items
-    })
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ items })
   })
 
-  const text = await res.text()
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
 
-  if (!res.ok) {
-    throw new Error(text)
-  }
+export async function getSales() {
+  const res = await fetch(API_URL)
 
-  return JSON.parse(text)
+  if (!res.ok) throw new Error("Failed to fetch sales")
+
+  return res.json()
 }

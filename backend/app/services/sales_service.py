@@ -13,7 +13,7 @@ def process_sale(db: Session, sale_data: dict):
         ).first()
 
         if not product:
-            raise ValueError(f"Producto {item['product_id']} no existe")
+            raise ValueError("Producto no existe")
 
         if product.stock < item["quantity"]:
             raise ValueError(f"Stock insuficiente para {product.name}")

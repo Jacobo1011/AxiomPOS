@@ -16,6 +16,9 @@ class SaleItemResponse(BaseModel):
     quantity: int
     price: float
 
+    class Config:
+        from_attributes = True
+
 
 class SaleResponse(BaseModel):
     id: int

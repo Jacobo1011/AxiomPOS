@@ -1,12 +1,20 @@
 # Next.js
-node_modules/
 .next/
 out/
+dist/
+.turbo/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Env files
 .env
 .env.*
-frontend/.env*
+!.env.example
 
 # Python
 __pycache__/
@@ -14,15 +22,25 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
 venv/
+.venv/
 env/
 ENV/
+venv.bak/
+
 .pytest_cache/
+
+# Database
+*.sqlite
 *.sqlite3
+*.db
+*.db-journal
 
 # Logs
 *.log
 logs/
+uvicorn.log
 
 # IDE
 .vscode/
@@ -36,7 +54,3 @@ Thumbs.db
 
 # Docker
 docker-compose.override.yml
-
-# Database
-*.db
-*.sqlite
