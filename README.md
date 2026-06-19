@@ -1,12 +1,12 @@
 #  AxiomPOS
 
-**A modern Point of Sale (POS) system built to simplify inventory management, sales tracking, and day-to-day business operations.**
+**Un moderno sistema de Punto de Venta (POS) diseñado para simplificar la gestión de inventario, seguimiento de ventas y operaciones diarias del negocio.**
 
-AxiomPOS is a full-stack POS solution designed for small businesses, local stores, and growing shops that need a simple but scalable way to manage products, sales, and inventory in real time.
+AxiomPOS es una solución POS full-stack diseñada para pequeños negocios, tiendas locales y comercios en crecimiento que necesitan una forma simple pero escalable de gestionar productos, ventas e inventario en tiempo real.
 
-The project combines a modern frontend experience with a powerful backend architecture, providing an intuitive workflow for handling transactions, monitoring stock, and organizing business operations efficiently.
+El proyecto combina una experiencia frontend moderna con una potente arquitectura backend, proporcionando un flujo intuitivo para manejar transacciones, monitorear stock y organizar operaciones comerciales.
 
-Whether you're learning full-stack development, building commercial management software, or experimenting with scalable system design, AxiomPOS offers a practical and real-world foundation.
+Tanto si estás aprendiendo desarrollo full-stack, construyendo software de gestión comercial o experimentando con diseño de sistemas escalables, AxiomPOS ofrece una base práctica y del mundo real.
 
 ---
 
@@ -14,60 +14,60 @@ Whether you're learning full-stack development, building commercial management s
 
 ---
 
-#  Features
+#  Características
 
-* Product registration with barcode support
-* Real-time inventory management
-* Sales processing and transaction history
-* Fast product search system
-* Dynamic shopping cart
-* Responsive and user-friendly interface
-* RESTful API architecture
-* Authentication and user management
-* Secure and scalable backend structure
+* Registro de productos con soporte de código de barras
+* Gestión de inventario en tiempo real
+* Procesamiento de ventas e historial de transacciones
+* Sistema de búsqueda de productos rápido
+* Carrito de compras dinámico
+* Interfaz responsive y amigable
+* Arquitectura API RESTful
+* Autenticación y gestión de usuarios
+* Estructura backend segura y escalable
 
 ---
 
-#  Tech Stack
+#  Stack Tecnológico
 
 ## Frontend
 
-* **TypeScript** (57.3%) — Main frontend language
-* **JavaScript** (1.4%) — Additional frontend functionality
-* Modern responsive UI
-* Interactive dashboard for sales and inventory management
+* **TypeScript** (71%) — Lenguaje principal del frontend
+* **JavaScript** — Funcionalidad adicional del frontend
+* UI responsive moderna
+* Dashboard interactivo para gestión de ventas e inventario
 
 ## Backend
 
-* **Python** (41%) — Backend and business logic
-* RESTful API architecture
-* Authentication and data validation
+* **Python** (27.5%) — Backend y lógica de negocio
+* Arquitectura API RESTful
+* Autenticación y validación de datos
 
-## Infrastructure
+## Infraestructura
 
-* **Docker & Docker Compose** — Containerized development and deployment
-* Database support for scalable operations
+* **Docker & Docker Compose** — Desarrollo y despliegue containerizado
+* Soporte de base de datos para operaciones escalables
 
 ---
 
-#  Project Structure
+#  Estructura del Proyecto
 
 ```
 AxiomPOS/
-├── frontend/          # Client application
-├── backend/           # Backend API
-├── database/          # Database scripts and schemas
-├── docker/            # Docker configurations
-├── docs/              # Project documentation
-├── docker-compose.yml # Container orchestration
+├── frontend/          # Aplicación cliente
+├── backend/           # API Backend
+├── database/          # Scripts y esquemas de base de datos
+├── docker/            # Configuraciones de Docker
+├── docs/              # Documentación del proyecto
+├── docker-compose.yml # Orquestación de contenedores
 └── README.md
 ```
 
 ---
 
-#  Requirements
+#  Requisitos
 
-Before getting started, make sure you have installed:
+Antes de comenzar, asegúrate de tener instalado:
 
 * Docker & Docker Compose
 * Node.js 18+
@@ -76,22 +76,22 @@ Before getting started, make sure you have installed:
 
 ---
 
-#  Getting Started
+#  Primeros Pasos
 
-## Docker Setup (Recommended)
+## Configuración con Docker (Recomendado)
 
 ```bash
-# Clone repository
+# Clonar repositorio
 git clone https://github.com/Jacobo1011/AxiomPOS.git
 
-# Enter project folder
+# Entrar en la carpeta del proyecto
 cd AxiomPOS
 
-# Start containers
+# Iniciar contenedores
 docker-compose up -d
 ```
 
-After running the containers:
+Después de ejecutar los contenedores:
 
 ```
 Frontend: http://localhost:3000
@@ -100,7 +100,7 @@ API: http://localhost:8000
 
 ---
 
-## Local Development Setup
+## Configuración Local para Desarrollo
 
 ### Backend
 
@@ -131,34 +131,34 @@ npm start
 
 ---
 
-#  Security
+#  Seguridad
 
-AxiomPOS includes basic security practices and backend validation features such as:
+AxiomPOS incluye prácticas de seguridad básica y características de validación backend como:
 
-* Input validation
-* Secure authentication flow
-* SQL injection protection
-* Encrypted sensitive data handling
+* Validación de entrada
+* Flujo de autenticación seguro
+* Protección contra inyección SQL
+* Manejo de datos sensibles cifrados
 
 ---
 
-#  API Reference
+#  Referencia de API
 
-### Create a Product
+### Crear un Producto
 
 ```http
 POST /api/products
 Content-Type: application/json
 
 {
-  "name": "Product Name",
+  "name": "Nombre del Producto",
   "price": 99.99,
   "stock": 50,
   "barcode": "123456789"
 }
 ```
 
-### Process a Sale
+### Procesar una Venta
 
 ```http
 POST /api/sales
@@ -175,79 +175,79 @@ Content-Type: application/json
 }
 ```
 
-**Note:** For complete API documentation, refer to the `/docs` folder.
+**Nota:** Para documentación completa de la API, consulta la carpeta `/docs`.
 
 ---
 
-#  Development Status
+#  Estado del Desarrollo
 
-| Component | Status |
+| Componente | Estado |
 |-----------|--------|
-| Core POS Features | ✅ Working |
-| Inventory Management | ✅ Working |
-| Sales Processing | ✅ Working |
-| Docker Setup | 🟡 In Progress |
-| Authentication | 🟡 In Progress |
-| Advanced Reports | 🔵 Planned |
+| Características POS Core | ✅ Funcionando |
+| Gestión de Inventario | ✅ Funcionando |
+| Procesamiento de Ventas | ✅ Funcionando |
+| Configuración Docker | 🟡 En Progreso |
+| Autenticación | 🟡 En Progreso |
+| Reportes Avanzados | 🔵 Planeado |
 
 ---
 
-#  Contributing
+#  Contribuciones
 
-Contributions, ideas, and improvements are always welcome.
+Las contribuciones, ideas y mejoras siempre son bienvenidas.
 
-If you'd like to contribute:
+Si te gustaría contribuir:
 
 ```bash
-# Create a new branch
+# Crear una nueva rama
 git checkout -b feature/AmazingFeature
 
-# Commit your changes
-git commit -m "Add some AmazingFeature"
+# Hacer commit de tus cambios
+git commit -m "Agregar AmazingFeature"
 
-# Push changes
+# Hacer push de los cambios
 git push origin feature/AmazingFeature
 ```
 
-Then open a Pull Request.
+Luego abre un Pull Request.
 
 ---
 
 #  Roadmap
 
-* [ ] Advanced reports and analytics
-* [ ] Online payment integrations
-* [ ] Mobile application
-* [ ] Multi-branch support
-* [ ] Supplier management integration
+* [ ] Reportes y análisis avanzados
+* [ ] Integraciones de pagos en línea
+* [ ] Aplicación móvil
+* [ ] Soporte multi-sucursal
+* [ ] Integración de gestión de proveedores
 
 ---
 
-#  License
+#  Licencia
 
-This project is open source and available under the **Apache License 2.0**.
+Este proyecto es de código abierto y está disponible bajo la **Licencia Apache 2.0**.
 
-See the [LICENSE](./LICENSE) file for details.
+Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 ---
 
-#  Author
+#  Autor
 
 [Jacobo1011](https://github.com/Jacobo1011)
 
-AxiomPOS is developed by Jacobo Carrasquilla.
+AxiomPOS es desarrollado por Jacobo Carrasquilla.
 
-If you use or fork this project, please keep visible credit to the original author.
-
----
-
-#  Support
-
-If you find a bug or want to suggest improvements:
-
-* Open an issue on [GitHub Issues](https://github.com/Jacobo1011/AxiomPOS/issues)
-* Check the project documentation inside the `/docs` folder
+Si usas o haces fork de este proyecto, por favor mantén visible el crédito al autor original.
 
 ---
 
-**Last updated:** 2026-05-10
+#  Soporte
+
+Si encuentras un bug o quieres sugerir mejoras:
+
+* Abre un issue en [GitHub Issues](https://github.com/Jacobo1011/AxiomPOS/issues)
+* Consulta la documentación del proyecto en la carpeta `/docs`
+
+---
+
+**Última actualización:** 2026-06-19
