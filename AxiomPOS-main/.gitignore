@@ -1,0 +1,56 @@
+# Next.js
+.next/
+out/
+dist/
+.turbo/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+.venv/
+env/
+ENV/
+venv.bak/
+
+.pytest_cache/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Logs
+*.log
+logs/
+uvicorn.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml

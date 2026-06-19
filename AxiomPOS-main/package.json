@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && venv\\Scripts\\activate && uvicorn app.main:app --reload",
+    "dev:frontend": "cd frontend && npm run dev"
+  }
+}
